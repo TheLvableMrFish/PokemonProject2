@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon</title>
+</head>
+<body>
+
+    <!-- header start -->
+    <nav class="nav-border-img navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"></a>
+                <img src="media/logo.png" alt="logo" class="img-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#link" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Starters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sale</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <form class="form-inline">
+                            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                    </li> -->
+                    <li class="top-nav-item nav-item"><a href="#link" class="nav-link"><span id="cartItems">0</span> item(s) - &#8369<span id="cartSubTotal">0.00</span></a></li>
+
+                    <li class="top-nav-item nav-item" id="checkout"><a href="#link" class="nav-link">Checkout</a></li>
+                    <li class="nav-item">
+                    <div class="money"><a href="#" class="nav-link">Wallet: &#8369<span id="amount_in_wallet">3000</span></a></div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main>
+
+    <div class="container-fluild padding">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1 section1"></div>
+            <div class="col-sm-12 col-md-4 section1">
+                <img src="media/pikachu.png" alt="img" width="300px" class="img-section1" id="img-section1">
+            </div>
+            <div class="col-sm-12 col-md-4 section1">
+                <h2 class="main-text" id="section1-main-text">Pokemon Shop</h2>
+                <p class="sub-text" id="section2-sub-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur commodi reiciendis ab natus fuga! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum. Explicabo, voluptatem! sit amet consectetur adipisicing elit. Voluptate, quaerat? Eaque et voluptates dolores eum eius enim at suscipit sit?</p>
+                <div class="starter-link"id="Starter"></div>
+                <input type="submit" value="Shop Now" id="clickme" onclick="changeImage()"; class="section1-button">
+            </div>
+            <div class="col-md-1 section1"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center">
+        <h1>Chose a Starter Pokemon</h1>
+        <div class="row">
+            <div class="col-md-3"></div>
+        <div class="col-md-2 section3-img" id="section2-img-1">
+                <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-grass" width="250"/>
+                <div class="section2-text">
+                    <!-- <p class=section2-main-text>Starter</p> -->
+                    <p class=section2-main-text>Bulbasaur</p>
+                <input type="submit" value="Chose" id="starter_grass" class="section2-button" onclick="changeImage1()";>
+            </div>
+        </div>
+        <div class="col-md-2 section2-img" id="section2-img-2">
+            <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-fire" width="250"/>
+            <div class="section2-text">
+                <!-- <p class=section2-main-text>Starter</p> -->
+                <p class=section2-main-text>Charmander</p>
+            <input type="submit" value="Chose" id="starter_fire" class="section2-button" onclick="changeImage2()";>
+            </div>
+        </div>
+        <div class="col-md-2 section2-img" id="section2-img-3">
+            <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-water" width="250"/>
+            <div class="section2-text">
+                <!-- <p class=section2-main-text>Starter</p> -->
+                <p class=section2-main-text>Squirtle</p>
+         <input type="submit" value="Chose" id="starter_water" class="section2-button" onclick="changeImage3()";>
+        </div>
+    </div>
+    </div>
+    </div>
+        
+        <section class="section section3 text-center">
+            <h2 class="section3-main-text" id="section3-main-text">Featured Pokemon</h2>
+        </section>
+
+      
+        <main class="main main-menu" id="mainMenu">
+
+            <section class="section latest container">
+                <div class="row">
+                </div>
+                <!-- entree -->
+                <div class="row products1" id="products1"></div>
+            </section>
+        </main>
+    
+   
+    <!-- check out start -->
+
+    <main class="main main-checkout d-none" id="main">
+        <section class="section checkout-section">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="checkout-header">Checkout</h2>
+                            <p class="checkout-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in doloribus eveniet facilis, quos aspernatur.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="checkout-item-count">
+                                <span id="checkoutItemCount"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <table class="table" id="table">
+                                <tr class="table-headers">
+                                    <td>Pokemon/item(s)</td>
+                                    <td>Price</td>
+                                    <td>quantity</td>
+                                </tr>
+
+                                <tbody id="tbody"></tbody>
+                                <!-- load items -->
+                                <tr class="totals" id="totals">
+                                    <td colspan='4'>
+                                        <!-- <p class="total-subtotal" id="totalSubtotal">Subtotal:</p> -->
+                                        <!-- <p class="total-tip" id="totalTip">Tip:</p>
+                                        <p class="total-tax" id="totalTax">Tax:</p> -->
+                                        <p class="total-total" id="totalTotal">Total:</p>
+                                    </td>
+                                    <td class="total-values" id="totalValues">
+                                        <p class="subtotal-value d-none" id="subtotalValue"></p>
+                                        <!-- <p class="tip-value" id="tipValue"></p> -->
+                                        <!-- <p class="tax-value" id="taxValue"></p> -->
+                                        <p class="total-value">&#8369 <span id="totalValue"></span> </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-secondary confirm-button" id='confirmButton'>confirm order</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    </main>
+
+    <!-- check out end -->
+
+    <div class="container-fluid section5">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <h3 class="featured-sale section5-list-name" id="featured-sale">Featured Sale</h3>
+                <ul class="featured-list">
+                    <li class="featured-item">Lorem.</li>
+                    <li class="featured-item">Dolore?</li>
+                    <li class="featured-item">Impedit.</li>
+                    <li class="featured-item">Officiis!</li>
+                    <li class="featured-item">Beatae.</li>
+                    <li class="featured-item">Iure!</li>
+                    <li class="featured-item">Reprehenderit!</li>
+                    <li class="featured-item">Ipsa?</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="poke-ball-store section5-list-name" id="poke-ball-store">Poke-Ball</h3>
+                <ul class="poke-ball-list">
+                    <li class="poke-ball-item">Lorem.</li>
+                    <li class="poke-ball-item">Inventore.</li>
+                    <li class="poke-ball-item">Laboriosam!</li>
+                    <li class="poke-ball-item">Perferendis.</li>
+                    <li class="poke-ball-item">Ullam!</li>
+                    <li class="poke-ball-item">Accusamus.</li>
+                    <li class="poke-ball-item">Illum?</li>
+                    <li class="poke-ball-item">Nobis!</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="rare-candy-store section5-list-name" id="rare-candy-store">Rare Candy</h3>
+                    <ul class="rare-candy-list">
+                        <li class="rare-candy-item">Lorem.</li>
+                        <li class="rare-candy-item">Doloribus.</li>
+                        <li class="rare-candy-item">Voluptates.</li>
+                        <li class="rare-candy-item">Aliquid.</li>
+                        <li class="rare-candy-item">Voluptatum!</li>
+                        <li class="rare-candy-item">Soluta!</li>
+                        <li class="rare-candy-item">Explicabo.</li>
+                        <li class="rare-candy-item">Ullam.</li>
+                    </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="quick-link-store section5-list-name" id="quick-link-store">Quick Link</h3>
+                    <ul class="quick-link-list">
+                        <li class="quick-link-item">Lorem.</li>
+                        <li class="quick-link-item">Adipisci!</li>
+                        <li class="quick-link-item">Dolorum.</li>
+                        <li class="quick-link-item">At.</li>
+                        <li class="quick-link-item">Id.</li>
+                        <li class="quick-link-item">Maiores.</li>
+                        <li class="quick-link-item">At.</li>
+                        <li class="quick-link-item">Ad?</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer" id="footer">
+    <div class="inner" id="inner">
+        <div class="colophon">
+            <p class="colophon-text">Coplyright &copy; 2021 Name &middot; All rights reserved</p>
+        </div>
+    </div>
+</footer>
+    <!-- images -->
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="icon-price-tags" viewBox="0 0 40 32">
+        <path d="M38.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM31 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+        <path d="M4 17l17-17h-2.5c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l0.939-0.939-13-13z"></path>
+        </symbol>
+        <symbol id="icon-coin-dollar" viewBox="0 0 32 32">
+        <path d="M15 2c-8.284 0-15 6.716-15 15s6.716 15 15 15c8.284 0 15-6.716 15-15s-6.716-15-15-15zM15 29c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12zM16 16v-4h4v-2h-4v-2h-2v2h-4v8h4v4h-4v2h4v2h2v-2h4l-0-8h-4zM14 16h-2v-4h2v4zM18 22h-2v-4h2v4z"></path>
+        </symbol>
+        </defs>
+        </svg>
+        
+
+    <!-- images end -->
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
+
+<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->

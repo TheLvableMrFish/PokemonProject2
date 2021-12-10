@@ -1,0 +1,250 @@
+:root{
+    --prim: skyblue;
+    --sec: rgb(41, 166, 216);
+    --page1: 1;
+    --page2: 0;
+    --page3: 0;
+  }
+  
+  *{box-sizing: border-box;}
+  
+  /* Generic star */
+  
+  body{
+      margin: 0;
+      padding: 0;
+      background: #f4f4f6;
+  }
+  
+  a{
+      color: black;
+      text-decoration: none;
+  }
+  
+  li{
+      list-style-type: none;
+  }
+  
+  /* Generic end */
+  
+  
+  /* main start */
+  
+  .section1{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: white;
+  }
+  
+  .section1{
+      background-color: var(--sec);
+  }
+  
+  /* .section{
+      margin-left: 6.8%;
+      margin-right: 6.8%;
+  } */
+  
+  .section1 h2{
+      margin-bottom: 0;
+  }
+  
+  .section1-text{
+      margin-left: 10%;
+      width: 30%;
+  }
+  
+  .img-section1{
+      margin-left: 15%;
+  }
+  
+  .section1-button{
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid white;
+      color: white;
+      font-weight: 600;
+      margin-top: 10px;
+      padding-top: 2px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 2px;
+      background-color: var(--sec);
+      margin-bottom: 10px;
+  }
+  
+  .section1-button:hover{
+      background-color: var(--prim);
+  }
+  
+  .section1-list{
+      display: flex;
+      width: 30%;
+      padding-left: 0;
+  }
+  .section1-item{
+      margin-left: 10px;
+      width: 7px;
+      height: 7px;
+  }
+  
+  
+  .section2-main-text{
+      color: var(--sec);
+      margin-top: 15px;
+      margin-left: 15%;
+      margin-bottom: 15px;
+      font-size: 34px;
+      font-weight: 600;
+  }
+  
+  .section2-button{
+      font-size: 18px;
+      border-radius: 2px;
+      font-weight: 600;
+      color: white;
+      background-color: orange;
+      margin-left: 15%;
+  }
+  
+  .section3{  
+    background-color: var(--sec);
+  }
+  
+  .section3-main-text{
+      margin-top: 20px;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      font-size: 34px;
+      color: white;
+  }
+  
+  .section4{
+      margin-top: 10px;
+      margin-bottom: 25px;
+  }
+  
+  .inner-section4{
+      margin-left: 10%;
+      margin-right: 10%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  
+  
+  .section4-button{
+      font-size: 18px;
+      border-radius: 2px;
+      font-weight: 600;
+      color: white;
+      background-color: orange;
+  }
+  
+  .section5{
+      margin-top: 10px;
+      color: white;
+      background-color: var(--sec);
+  }
+  
+  .section5-list-name{
+      margin-top: 40px;
+      margin-left: 35px;
+  }
+  
+  .section5 li{
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  
+  /* main end */
+  
+  /* footer start */
+  
+  
+  .footer{
+      font-weight: 700;
+      color: white;
+      background-color: var(--prim);
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+  }
+  
+  .colophon-text{
+      text-align: center;
+  }
+  
+  .icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+    
+    /* ==========================================
+    Single-colored icons can be modified like so:
+    .icon-name {
+      font-size: 32px;
+      color: red;
+    }
+    ========================================== */
+    
+    .icon-price-tags {
+      width: 1.25em;
+    }
+
+    .pokemon{
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .pokemon .name{
+        font-size: 30px;
+        font-weight: 500;
+        z-index: 100;
+    }
+
+    .pokemon .cost{
+        margin-left: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        z-index: 100;
+    }
+    .pokemon button{
+        margin-left: 10px;
+        z-index: 100;
+    }
+
+    .pokemon-number{
+        font-size: 25px;
+        font-weight: 500;
+        position: absolute;
+        opacity: .8;
+    }
+
+    .info{
+        position: absolute;
+        top: 22px;
+        width: 72%;
+        margin-left: 8px;
+        padding-top: 10px;
+        z-index: 99;
+        background: #f4f4f6;
+        height: 60%;
+    }
+
+    .btnInfo{
+        z-index: 100;
+    }
+
+    .qty-amount{
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        z-index: 100;
+    }
